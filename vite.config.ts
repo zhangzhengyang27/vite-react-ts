@@ -4,5 +4,11 @@ import viteEslint from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), viteEslint()]
+  plugins: [react(), viteEslint()],
+  resolve: {
+    // 别名配置
+    alias: {
+      '@': '/src'
+    }
+  }
 });
